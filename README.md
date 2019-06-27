@@ -7,7 +7,7 @@ UIWidget is a Unity Package which helps developers to create, debug and deploy e
 #### What does this plugin do?
 Just `parse and render raw markdown strings` into UIWidgets elements.
 
-![](https://www.suntabu.com/images/MarkdownSocial.png)
+![](https://www.suntabu.com/MarkdownSocial.png)
 
 #### How to use
 - 1. You must learn how to use UIWidgets first
