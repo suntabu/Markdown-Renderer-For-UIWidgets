@@ -357,11 +357,11 @@ namespace markdownRender
             Widget _buildBullet(string listTag)
             {
                 if (listTag == "ul")
-                    return new Text("•", null, styleSheet.styles("li"), TextAlign.center);
+                    return new Text("•", null, styleSheet.styles("li"), textAlign: TextAlign.center);
 
                 int index = _blocks.last().nextListIndex;
                 return new Padding(null, EdgeInsets.only(5.0f),
-                    new Text((index + 1) + ".", null, styleSheet.styles("li"), TextAlign.right));
+                    new Text((index + 1) + ".", null, styleSheet.styles("li"), textAlign: TextAlign.right));
             }
 
             void _addParentInlineIfNeeded(string tag)

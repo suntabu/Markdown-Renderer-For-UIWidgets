@@ -111,16 +111,15 @@ namespace markdown
             return new MarkdownStyleSheet(
                 new TextStyle(true, Colors.blue),
                 theme.textTheme.body1,
-                new TextStyle(true, Colors.grey.shade700, theme.textTheme.body1.fontSize * .85f, null, null, null, null,
-                    null, null, null, null, null, null, "monospace", null),
+                new TextStyle(true, Colors.grey.shade700, fontSize: theme.textTheme.body1.fontSize * .85f, fontFamily: "monospace"),
                 theme.textTheme.headline,
                 theme.textTheme.title,
                 theme.textTheme.subhead,
                 theme.textTheme.body2,
                 theme.textTheme.body2,
                 theme.textTheme.body2,
-                new TextStyle(true, null, null, null, FontStyle.italic),
-                new TextStyle(true, null, null, FontWeight.bold),
+                new TextStyle(true, fontStyle: FontStyle.italic),
+                new TextStyle(true, fontWeight: FontWeight.bold),
                 theme.textTheme.body1,
                 theme.textTheme.body1,
                 8,
@@ -129,9 +128,9 @@ namespace markdown
                 new BoxDecoration(null, null, null, BorderRadius.circular(2), null, null, null),
                 8,
                 new BoxDecoration(Colors.grey.shade100, null, null, BorderRadius.circular(2), null, null, null),
-                new BoxDecoration(null, null,new Border(
-                    new BorderSide(Colors.grey.shade300,5)))
-            );
+                new BoxDecoration(null, null, new Border(
+                    new BorderSide(Colors.grey.shade300, 5)))
+            ); ;
         }
     }
 }
